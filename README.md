@@ -13,30 +13,7 @@ Automatically:
 - **Visualize** category distribution
 - Support **single and batch comment inputs**
 
----
 
-## 📁 Project Structure
-
-```bash
-comment_classifier_bert/
-├── app/
-│   └── ui_streamlit.py         # Streamlit user interface
-├── models/
-│   └── bert_classifier.pt      # Trained model weights
-├── src/
-│   ├── dataset.py              # Dataset and DataLoader class
-│   ├── model.py                # BERTClassifier architecture
-│   ├── predict.py              # Inference and label mapping
-│   └── train.py                # Model training logic
-├── sample_comments.csv         # Sample input for testing
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project overview (this file)
-
-
-
-Here’s your content formatted in **clean markdown (`README.md`) style**:
-
----
 
 ````markdown
 # 🧠 Target Comment Categories
