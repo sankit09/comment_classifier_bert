@@ -1,22 +1,24 @@
+````markdown
 # 💬 Comment Categorization & Reply Assistant (BERT-Based NLP Tool)
 
-This is a BERT-powered NLP tool that classifies user comments into meaningful categories like praise, constructive criticism, hate, threat, and more. It also generates empathetic, category-specific auto-responses to assist brands and creators in efficiently engaging with their audience.
+This is a **BERT-powered NLP tool** that classifies user comments into meaningful categories like *praise, constructive criticism, hate, threat,* and more.  
+It also generates empathetic, category-specific **auto-responses** to help brands and creators efficiently engage with their audience.
 
 ---
 
 ## 🎯 Project Objective
 
 Automatically:
+
 - Detect the **intent or emotion** in a comment
 - **Classify** it into one of 8 actionable categories
 - **Generate suitable responses** for each category
 - **Visualize** category distribution
 - Support **single and batch comment inputs**
 
+---
 
-
-````markdown
-# 🧠 Target Comment Categories
+## 🧠 Target Comment Categories
 
 This tool classifies comments into the following **8 categories**:
 
@@ -33,7 +35,7 @@ This tool classifies comments into the following **8 categories**:
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
 - **Language**: Python 3.11  
 - **Model**: `bert-base-uncased`  
@@ -46,7 +48,7 @@ This tool classifies comments into the following **8 categories**:
 
 ---
 
-# 🚀 How to Run
+## 🚀 How to Run
 
 ### 1. Clone and Install Dependencies
 
@@ -58,13 +60,13 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ````
 
-### 2. Train the Model (Optional if `bert_classifier.pt` exists)
+### 2. Train the Model *(Optional if `bert_classifier.pt` exists)*
 
 ```bash
 PYTHONPATH=. python src/train.py
 ```
 
-This trains the BERT model and saves weights to `models/bert_classifier.pt`.
+This will train the BERT model and save weights to `models/bert_classifier.pt`.
 
 ### 3. Run the Streamlit App
 
@@ -76,19 +78,19 @@ Then open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
 
-# 📊 Features
+## 📊 Features
 
-✅ Classify both single and batch comments
-✅ Suggest personalized auto-responses
-✅ Visualize category distribution in bar chart
-✅ Upload `.csv` file or use manual input
-✅ Download categorized comments as CSV
-✅ Modular, production-ready codebase
-✅ Trained on 1,000 labeled comment samples
+* ✅ Classify both **single** and **batch** comments
+* ✅ Suggest **personalized auto-responses**
+* ✅ Visualize **category distribution** in bar chart
+* ✅ Upload `.csv` file or use **manual input**
+* ✅ Download **categorized results** as CSV
+* ✅ Modular, **production-ready codebase**
+* ✅ Trained on **1,000 labeled** comment samples
 
 ---
 
-# 🧪 Sample Input (`sample_comments.csv`)
+## 🧪 Sample Input (`sample_comments.csv`)
 
 ```csv
 comment
@@ -101,7 +103,7 @@ comment
 
 ---
 
-# 💡 Example Output
+## 💡 Example Output
 
 | comment                                        | predicted\_label       | auto\_response                                                                 |
 | ---------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------ |
@@ -113,7 +115,7 @@ comment
 
 ---
 
-# 📈 Performance (on 1,000+ samples)
+## 📈 Performance (on 1,000+ samples)
 
 | Metric          | Value  |
 | --------------- | ------ |
@@ -124,19 +126,30 @@ comment
 
 ---
 
-# 📌 To Improve Further
+## 📸 Screenshots
 
-* Add confidence scores for predictions
-* Enable feedback collection on auto-responses
-* Extend to multilingual comment support
-* Deploy via Hugging Face or Streamlit Cloud
+### 🔹 Main Dashboard
+
+![Main UI Screenshot](outputs/dashboard_image)
+
+### 🔹 Prediction Output Example
+
+![Prediction Screenshot](outputs/prediction_image)
+
+> *Replace the above image paths with your actual screenshot paths.*
 
 ---
 
-# 👤 Author
+---
+
+## 👤 Author
 
 **Ankit Srivastava**
-Data Scientist & AI Engineer
+*Data Scientist & AI Engineer*
 
+---
 
+```
+
+Let me know if you want a version with emoji headers removed, or need help creating the screenshots or README badge-style banners.
 ```
